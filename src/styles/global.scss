@@ -20,14 +20,24 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 
+@keyframes flyIn {
+  0% {
+    transform: translateY(200px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
 .switchWrapper {
   position: relative;
 
   > :first-child ~ * {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
+    animation: flyIn 1s;
   }
 }
 
