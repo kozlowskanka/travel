@@ -42,11 +42,10 @@ export default function reducer(statePart = [], action = {}) {
         tags: [...statePart.tags, action.payload.tag],
       };
 
-    // REMOVE_TAG requires being fixed
     case REMOVE_TAG:
       return {
         ...statePart,
-        tags: [...statePart.tags, action.payload.tag],
+        tags: statePart.tags.filter(tag => tag !== action.payload.tag),
       };
 
     default:
