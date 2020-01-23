@@ -28,4 +28,17 @@ describe('Component TripSummary', () => {
   it('should throw error without required props', () => {
     expect(() => shallow(<TripSummary />)).toThrow();
   });
+
+  // it('should render tags in proper order inside spans', () => {
+  //   const expectedTags = ['a', 'b', 'c'];
+  //   const component = shallow(<TripSummary tags={expectedTags}/>);
+
+  // });
+
+  // it('should not render div with tags when tag is not provided', () => {
+
+
+
+  // });
+
 });
