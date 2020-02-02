@@ -12,6 +12,7 @@ import settings from '../../../data/settings';
 import { calculateTotal } from '../../../utils/calculateTotal';
 import { formatPrice } from '../../../utils/formatPrice';
 
+
 const sendOrder = (options, tripCost, tripId, tripCountry) => {
   const totalCost = formatPrice(calculateTotal(tripCost, options));
 
@@ -50,7 +51,8 @@ const sendOrder = (options, tripCost, tripId, tripCountry) => {
   }
 };
 
-const OrderForm = ({ tripId, tripCountry, tripCost, options, setOrderOption }) => (
+const OrderForm = ({ tripId, tripCountry, tripCost, options, setOrderOption, discounted }) => (
+
   <Row>
     {pricing.map(option => (
       <Col key={option.id} md={4}>
@@ -60,10 +62,11 @@ const OrderForm = ({ tripId, tripCountry, tripCost, options, setOrderOption }) =
       </Col>
     ))}
     <Col xs={12}>
-      <OrderSummary cost={tripCost} options={options}/>
+      <OrderSummary cost={tripCost} options={options} discounted={discounted}/>
       <Button onClick={() => sendOrder(options, tripCost, tripId, tripCountry)}>Order now!</Button>
     </Col>
   </Row>
+
 );
 
 OrderForm.propTypes = {
@@ -72,6 +75,7 @@ OrderForm.propTypes = {
   setOrderOption: PropTypes.func,
   tripId: PropTypes.string,
   tripCountry: PropTypes.object,
+  discounted: PropTypes.number,
 };
 
 export default OrderForm;

@@ -45,6 +45,10 @@
   }
 }
 
+.higlighted {
+  color: $color-primary;
+}
+
 .tags {
   width: 80%;
   margin: ($base-size * 2) auto 0 auto;

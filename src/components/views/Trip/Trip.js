@@ -15,7 +15,14 @@ import OrderForm from '../../features/OrderForm/OrderFormContainer';
 import styles from './Trip.scss';
 import {Grid, Row, Col} from 'react-flexbox-grid';
 
-const Trip = ({error, name, image, cost, days, description, id, country, intro}) => {
+import { promoPrice } from '../../../utils/promoPrice';
+import { formatPrice } from '../../../utils/formatPrice';
+
+const Trip = ({error, name, image, cost, days, description, id, country, intro, discount}) => {
+
+  const discountedPrice = formatPrice(promoPrice(cost.slice(1).replace(',',''),discount));
+  const formatedCost = cost.substring(cost.length-3, cost,length);
+
   if(error) return <NotFound />;
   else return (
     <Section>
@@ -34,7 +41,8 @@ const Trip = ({error, name, image, cost, days, description, id, country, intro})
               </div>
               <List variant='light'>
                 <ListItem title={`<strong>Duration:</strong> ${days} days`} icon='calendar-alt' />
-                <ListItem title={`<strong>Price:</strong> from ${cost}`} icon='money-bill-wave' />
+                <ListItem title={`Standard price ${formatedCost}`} icon='money-bill-wave' />
+                <ListItem title={`<strong>Promo price:</strong> ${(discountedPrice)}`} icon='money-bill-wave' />
               </List>
             </Col>
           </Row>
@@ -44,7 +52,7 @@ const Trip = ({error, name, image, cost, days, description, id, country, intro})
         <Row>
           <Col xs={12}>
             <PageTitle text='Trip options' />
-            <OrderForm tripId={id} tripCountry={country} tripCost={cost} />
+            <OrderForm tripId={id} tripCountry={country} tripCost={formatedCost} discounted={(discountedPrice)}/>
           </Col>
         </Row>
       </Grid>

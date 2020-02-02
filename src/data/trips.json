@@ -8,6 +8,7 @@
     "name": "Pleasant travel in cool Turkey",
     "days": 7,
     "cost": "$51,380.61",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Turkey/all?lock=1",
     "address": "604 Loring Avenue, Welda, 4291, Turkey",
     "tags": [
@@ -25,6 +26,7 @@
     "name": "Pleasant trek in outstanding Togo",
     "days": 3,
     "cost": "$29,318.86",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Togo/all?lock=2",
     "address": "891 Clinton Street, Lund, 7753, Togo",
     "tags": [
@@ -42,6 +44,7 @@
     "name": "Marvelous travel in fantastic Timor-Leste",
     "days": 14,
     "cost": "$139,398.25",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Timor-Leste/all?lock=3",
     "address": "841 Moore Place, Rowe, 7595, Timor-Leste",
     "tags": [
@@ -59,6 +62,7 @@
     "name": "Wondrous travel in excellent United States of America",
     "days": 12,
     "cost": "$33,416.78",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,United%20States%20of%20America/all?lock=4",
     "address": "502 McClancy Place, Defiance, 5223, United States of America",
     "tags": [
@@ -78,6 +82,7 @@
     "name": "Surprising jaunt in admirable United Arab Emirates",
     "days": 11,
     "cost": "$68,732.74",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,United%20Arab%20Emirates/all?lock=5",
     "address": "180 Fuller Place, Ryderwood, 8587, United Arab Emirates",
     "tags": [
@@ -97,6 +102,7 @@
     "name": "Fabulous swing in strange Viet Nam",
     "days": 2,
     "cost": "$9,552.96",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Viet%20Nam/all?lock=6",
     "address": "659 Metrotech Courtr, Alafaya, 6102, Viet Nam",
     "tags": [
@@ -114,6 +120,7 @@
     "name": "Strange travel in marvelous Western Sahara",
     "days": 8,
     "cost": "$22,473.95",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Western%20Sahara/all?lock=7",
     "address": "406 Hubbard Place, Sanborn, 3593, Western Sahara",
     "tags": [
@@ -133,6 +140,7 @@
     "name": "Excellent swing in pleasant Vanuatu",
     "days": 14,
     "cost": "$24,168.28",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Vanuatu/all?lock=8",
     "address": "480 Madison Street, Hinsdale, 4696, Vanuatu",
     "tags": [
@@ -152,6 +160,7 @@
     "name": "Pleasing outing in brilliant Venezuela (Bolivarian Republic of)",
     "days": 4,
     "cost": "$15,538.88",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Venezuela%20/all?lock=9",
     "address": "571 Colonial Court, Waterford, 662, Venezuela (Bolivarian Republic of)",
     "tags": [
@@ -170,6 +179,7 @@
     "name": "Wondrous foray in remarkable Vanuatu",
     "days": 9,
     "cost": "$20,289.57",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Vanuatu/all?lock=10",
     "address": "660 Clarkson Avenue, Fairforest, 1273, Vanuatu",
     "tags": [
@@ -187,6 +197,7 @@
     "name": "Remarkable swing in fine Zimbabwe",
     "days": 5,
     "cost": "$29,255.01",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Zimbabwe/all?lock=11",
     "address": "984 Bennet Court, Marienthal, 6696, Zimbabwe",
     "tags": [
@@ -204,6 +215,7 @@
     "name": "Enjoyable foray in fine United Arab Emirates",
     "days": 12,
     "cost": "$28,512.89",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,United%20Arab%20Emirates/all?lock=12",
     "address": "454 Hampton Avenue, Sisquoc, 6988, United Arab Emirates",
     "tags": [
@@ -222,6 +234,7 @@
     "name": "Pleasant foray in astonishing Zambia",
     "days": 6,
     "cost": "$50,075.44",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Zambia/all?lock=13",
     "address": "483 Battery Avenue, Springdale, 4198, Zambia",
     "tags": [
@@ -240,6 +253,7 @@
     "name": "Fabulous outing in awesome United Arab Emirates",
     "days": 12,
     "cost": "$114,035.09",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,United%20Arab%20Emirates/all?lock=14",
     "address": "525 Channel Avenue, Coalmont, 1897, United Arab Emirates",
     "tags": [
@@ -258,6 +272,7 @@
     "name": "Terrific jaunt in admirable United Arab Emirates",
     "days": 3,
     "cost": "$22,814.08",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,United%20Arab%20Emirates/all?lock=15",
     "address": "371 King Street, Convent, 3619, United Arab Emirates",
     "tags": [
@@ -276,6 +291,7 @@
     "name": "Tremendous jaunt in brilliant Tokelau",
     "days": 4,
     "cost": "$37,692.67",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Tokelau/all?lock=16",
     "address": "671 Ferry Place, Balm, 8234, Tokelau",
     "tags": [
@@ -295,6 +311,7 @@
     "name": "Outstanding trek in magnificent Venezuela (Bolivarian Republic of)",
     "days": 14,
     "cost": "$75,877.03",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Venezuela%20/all?lock=17",
     "address": "501 Maujer Street, Canterwood, 6885, Venezuela (Bolivarian Republic of)",
     "tags": [
@@ -314,6 +331,7 @@
     "name": "Sensational expedition in fine Zambia",
     "days": 4,
     "cost": "$23,943.00",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Zambia/all?lock=18",
     "address": "231 Hoyt Street, Morriston, 1255, Zambia",
     "tags": [
@@ -332,6 +350,7 @@
     "name": "Marvelous foray in brilliant Tokelau",
     "days": 13,
     "cost": "$129,701.23",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Tokelau/all?lock=19",
     "address": "495 Otsego Street, Brownlee, 198, Tokelau",
     "tags": [
@@ -349,6 +368,7 @@
     "name": "Admirable foray in outstanding Uganda",
     "days": 4,
     "cost": "$32,853.39",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Uganda/all?lock=20",
     "address": "376 Gaylord Drive, Cassel, 5684, Uganda",
     "tags": [
@@ -367,6 +387,7 @@
     "name": "Tremendous jaunt in strange Tokelau",
     "days": 2,
     "cost": "$15,745.33",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Tokelau/all?lock=21",
     "address": "711 Kane Place, Neibert, 764, Tokelau",
     "tags": [
@@ -384,6 +405,7 @@
     "name": "Wondrous expedition in tremendous Togo",
     "days": 5,
     "cost": "$21,420.59",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Togo/all?lock=22",
     "address": "738 Ovington Court, Ona, 1712, Togo",
     "tags": [
@@ -401,6 +423,7 @@
     "name": "Tremendous foray in remarkable Thailand",
     "days": 5,
     "cost": "$40,052.13",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Thailand/all?lock=23",
     "address": "579 Caton Avenue, Southview, 8918, Thailand",
     "tags": [
@@ -418,6 +441,7 @@
     "name": "Awesome cruise in excellent Ukraine",
     "days": 13,
     "cost": "$62,584.29",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Ukraine/all?lock=24",
     "address": "578 Banner Avenue, Wyoming, 4547, Ukraine",
     "tags": [
@@ -435,6 +459,7 @@
     "name": "Astonishing swing in admirable Ukraine",
     "days": 10,
     "cost": "$98,238.03",
+    "discount": 20,
     "image": "https://loremflickr.com/400/200/landscape,Ukraine/all?lock=25",
     "address": "985 Burnett Street, Walton, 1890, Ukraine",
     "tags": [

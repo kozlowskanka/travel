@@ -35,14 +35,14 @@ describe('Component TripSummary', () => {
     component.find('.tags span').forEach((elem, i) => {
       expect(elem.text()).toEqual(expectedTags[i]);
     });
-    // expect(component.find('.tags span').at(0).text()).toEqual(expectedTags[0]);
-    // expect(component.find('.tags span').at(1).text()).toEqual(expectedTags[1]);
-    // expect(component.find('.tags span').at(2).text()).toEqual(expectedTags[2]);
   });
+  // expect(component.find('.tags span').at(0).text()).toEqual(expectedTags[0]);
+  // expect(component.find('.tags span').at(1).text()).toEqual(expectedTags[1]);
+  // expect(component.find('.tags span').at(2).text()).toEqual(expectedTags[2]);
+  // });
 
   it('should not render div with tags when tag is not provided', () => {
     const component = shallow(<TripSummary tags={[]} />);
     expect(component.exists('div .tags')).toBeFalsy();
   });
-
 });
