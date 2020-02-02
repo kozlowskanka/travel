@@ -51,7 +51,7 @@ const sendOrder = (options, tripCost, tripId, tripCountry) => {
   }
 };
 
-const OrderForm = ({ tripId, tripCountry, tripCost, options, setOrderOption, discounted }) => (
+const OrderForm = ({ tripId, tripCountry, tripCost, options, setOrderOption, discount }) => (
 
   <Row>
     {pricing.map(option => (
@@ -62,7 +62,7 @@ const OrderForm = ({ tripId, tripCountry, tripCost, options, setOrderOption, dis
       </Col>
     ))}
     <Col xs={12}>
-      <OrderSummary cost={tripCost} options={options} discounted={discounted}/>
+      <OrderSummary cost={tripCost} options={options} discount={discount}/>
       <Button onClick={() => sendOrder(options, tripCost, tripId, tripCountry)}>Order now!</Button>
     </Col>
   </Row>
@@ -75,7 +75,7 @@ OrderForm.propTypes = {
   setOrderOption: PropTypes.func,
   tripId: PropTypes.string,
   tripCountry: PropTypes.object,
-  discounted: PropTypes.number,
+  discount: PropTypes.number,
 };
 
 export default OrderForm;

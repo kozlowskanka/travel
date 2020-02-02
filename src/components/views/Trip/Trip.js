@@ -20,8 +20,8 @@ import { formatPrice } from '../../../utils/formatPrice';
 
 const Trip = ({error, name, image, cost, days, description, id, country, intro, discount}) => {
 
-  const discountedPrice = formatPrice(promoPrice(cost.slice(1).replace(',',''),discount));
-  const formatedCost = cost.substring(cost.length-3, cost,length);
+  const formattedRegularCost = cost.substring(cost.length-3, cost, length);
+  const formattedDiscountedCost = formatPrice(promoPrice(cost.slice(1).replace(',',''),discount));
 
   if(error) return <NotFound />;
   else return (
@@ -41,8 +41,8 @@ const Trip = ({error, name, image, cost, days, description, id, country, intro, 
               </div>
               <List variant='light'>
                 <ListItem title={`<strong>Duration:</strong> ${days} days`} icon='calendar-alt' />
-                <ListItem title={`Standard price ${formatedCost}`} icon='money-bill-wave' />
-                <ListItem title={`<strong>Promo price:</strong> ${(discountedPrice)}`} icon='money-bill-wave' />
+                <ListItem title={`Standard price ${formattedRegularCost}`} icon='money-bill-wave' />
+                <ListItem title={`<strong>Promo price:</strong> ${formattedDiscountedCost}`} icon='money-bill-wave' />
               </List>
             </Col>
           </Row>
@@ -52,7 +52,7 @@ const Trip = ({error, name, image, cost, days, description, id, country, intro, 
         <Row>
           <Col xs={12}>
             <PageTitle text='Trip options' />
-            <OrderForm tripId={id} tripCountry={country} tripCost={formatedCost} discounted={(discountedPrice)}/>
+            <OrderForm tripId={id} tripCountry={country} tripCost={cost} discount={discount}/>
           </Col>
         </Row>
       </Grid>
