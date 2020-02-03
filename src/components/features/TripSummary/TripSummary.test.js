@@ -5,23 +5,26 @@ import TripSummary from './TripSummary';
 describe('Component TripSummary', () => {
   it('should generate proper link', () => {
     const expectedId = 'abc';
-    const component = shallow(<TripSummary id={expectedId} tags={[]} />);
+    const expectedCost='cost';
+    const component = shallow(<TripSummary id={expectedId} tags={[]} cost={expectedCost} />);
     expect(component.find('Link').prop('to')).toEqual(`/trip/${expectedId}`);
   });
 
   it('should render correct image and alt', () => {
     const expectedImage = 'image.jpg';
     const expectedName = 'lorem';
-    const component = shallow(<TripSummary name={expectedName} image={expectedImage} tags={[]}/>);
+    const expectedCost='cost';
+    const component = shallow(<TripSummary name={expectedName} cost={expectedCost} image={expectedImage} tags={[]}/>);
     expect(component.find('img').prop('src')).toEqual(expectedImage);
     expect(component.find('img').prop('alt')).toEqual(expectedName);
   });
 
-  it('should render correct props name, cost, days ', () => {
+  it('should render correct props name, cost, days, discount ', () => {
     const expectedName = 'name';
     const expectedCost = 'cost';
     const expectedDays = 7;
-    const component = shallow(<TripSummary name={expectedName} cost={expectedCost} days={expectedDays} tags={[]}/>);
+    const expectedDiscount = 20;
+    const component = shallow(<TripSummary name={expectedName} cost={expectedCost} days={expectedDays} discount={expectedDiscount} tags={[]}/>);
     expect(component).toBeTruthy();
   });
 
@@ -31,7 +34,8 @@ describe('Component TripSummary', () => {
 
   it('should render tags in proper order inside spans', () => {
     const expectedTags = ['a', 'b', 'c'];
-    const component = shallow(<TripSummary tags={expectedTags}/>);
+    const expectedCost='cost';
+    const component = shallow(<TripSummary tags={expectedTags} cost={expectedCost}/>);
     component.find('.tags span').forEach((elem, i) => {
       expect(elem.text()).toEqual(expectedTags[i]);
     });
@@ -42,7 +46,8 @@ describe('Component TripSummary', () => {
   // });
 
   it('should not render div with tags when tag is not provided', () => {
-    const component = shallow(<TripSummary tags={[]} />);
+    const expectedCost = 'cost';
+    const component = shallow(<TripSummary cost={expectedCost} tags={[]} />);
     expect(component.exists('div .tags')).toBeFalsy();
   });
 });
